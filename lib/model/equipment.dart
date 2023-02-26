@@ -9,10 +9,10 @@ class Equipment {
   final String name;
   final String url;
   final List<String> desc;
-  final Damage damage;
+  final Damage? damage;
 
   @JsonKey(name: "two_handed_damage")
-  final Damage twoHandedDamage;
+  final Damage? twoHandedDamage;
 
   Equipment(
       {required this.index,
